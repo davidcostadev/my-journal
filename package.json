@@ -10,20 +10,21 @@
   "author": "David Costa <davidcostadev@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "babel-loader": "^8.0.6",
+    "color-alpha": "^1.0.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
-  },
-  "devDependencies": {
-    "@babel/preset-react": "^7.7.4",
-    "css-loader": "^3.4.0",
-    "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^1.1.1"
   }
 }

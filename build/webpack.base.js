@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const resolve = require('./utils/resolve');
-const cssLoader = require('./rules/cssLoader');
+// const cssLoader = require('./rules/cssLoader');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './public/index.html',
@@ -24,8 +24,8 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
-      },
-      cssLoader
+      }
+      // cssLoader
     ]
   },
   plugins: [HtmlWebpackPluginConfig],
