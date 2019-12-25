@@ -1,4 +1,4 @@
-# Webpack boilerplate
+# My Journal
 
 ## installation
 
