@@ -39,3 +39,9 @@ export const gray = {
   n800: '#424242',
   n900: '#212121'
 };
+
+export default {
+  primary,
+  secondary,
+  gray,
+};

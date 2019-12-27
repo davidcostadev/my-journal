@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import alpha from 'color-alpha';
-import { gray, primary, secondary } from '../colors';
+import Button from '../components/Button';
+import { gray, primary } from '../colors';
 
 const Title = styled.h1`
   font-size: 24px;
@@ -25,34 +25,11 @@ const Header = styled.header`
 
 const Menu = styled.div``;
 
-const Button = styled.button`
-  border-width: 0;
-  background-color: ${primary.default};
-  color: white;
-  padding: 8px 12px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover{
-    background-color: ${primary.n600};
-  }
-
-  &:active {
-    background-color: ${primary.n900};
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 2px ${alpha(primary.default, '.4')};
-    outline-width: 0
-  }
-`;
-
-export default () => (
+export default ({ onAddJournal }) => (
   <Header>
     <Title>My Journal</Title>
     <Menu>
-      <Button>Add Journal</Button>
+      <Button onClick={onAddJournal}>Add Journal</Button>
     </Menu>
   </Header>
 );
