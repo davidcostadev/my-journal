@@ -4,6 +4,7 @@ import Card from './components/Card';
 import { createGlobalStyle } from 'styled-components';
 import Header from './components/Header';
 import Modal from './components/Modal';
+import PageUp from './components/PageUp';
 import FormJournal from './components/FormJournal';
 import { gray } from './colors';
 
@@ -32,6 +33,7 @@ const App = () => {
       <GlobalStyle />
       <div className='App'>
         <Header onAddJournal={onAddJournal} />
+        <PageUp />
         <Modal.Box isOpen={modalVisibility}>
           <FormJournal onSave={onSave} onCancel={onCancel} />
         </Modal.Box>
